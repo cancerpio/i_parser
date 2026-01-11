@@ -1,7 +1,6 @@
 export async function fetchCsvText(csvUrl: string): Promise<string> {
     const response = await fetch(csvUrl, {
         method: 'GET',
-        cache: 'no-store',
         headers: {
             Accept: 'text/csv,*/*;q=0.9',
         },
